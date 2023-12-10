@@ -26,34 +26,142 @@
           <div class="logo"><h1>LOGO</h1></div>
           <form action="#">
             <input type="text" name="text" id="search" placeholder="Search" />
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <button class="search__button">
+              <svg class="search__icon">
+                <use xlink:href="./img/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
           </form>
 
           <div class="logs">
             <div class="hearts">
-              <i class="fa-solid fa-heart"></i>
-              <i class="fa-solid fa-shopping-cart"></i>
+              <button class="love__button">
+                <svg class="love__icon">
+                  <use xlink:href="./img/sprite.svg#icon-heart-outlined"></use>
+                </svg>
+              </button>
+              <button class="cart__button">
+                <svg class="cart__icon">
+                  <use xlink:href="./img/sprite.svg#icon-cart"></use>
+                </svg>
+                <div class="item__count">
+                  <span class="cart__number">0</span>
+                </div>
+              </button>
             </div>
             <div class="buttons">
               <button>
-                <a class="btn btn--primary .btn-white" href="#">Login</a>
+                <a class="btn btn--primary .btn-white log1" href="#">Login</a>
               </button>
               <button>
-                <a class="btn btn--primary .btn-white" href="#">Sign In</a>
+                <a class="btn btn--primary .btn-white log1" href="#">Sign In</a>
               </button>
             </div>
           </div>
         </div>
+        <div class="line"></div>
         <div class="bottom__nav container">
           <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#">PAYMENT & DELIVERY</a></li>
+            <li><a class="nav__items" href="#">HOME</a></li>
+            <li><a class="nav__items" href="#">ABOUT US</a></li>
+            <li><a class="nav__items" href="#">BLOG</a></li>
+            <li><a class="nav__items" href="#">CONTACT</a></li>
+            <li><a class="nav__items" href="#">PAYMENT & DELIVERY</a></li>
           </ul>
         </div>
       </nav>
+      <main>
+        <div class="slider">
+          <div class="slide slide--1">
+            <div class="banner">
+              <div class="container">
+                <div class="banner__content">
+                  <div class="text__content">
+                    <h2 class="main__head">
+                      UNLEACH THE EXTRAORDINARY <br />
+                      WITH OUR CUTTING-EDGE <span>GADGET</span> <br />
+                      <span>UP TO 50% OFF</span>
+                    </h2>
+                    <p class="head__text">
+                      Effortless Innovation in the palm of your hands
+                    </p>
+                    <button class="banner">
+                      <a class="btn btn--primary .btn-white log1" href="#"
+                        >Buy Now</a
+                      >
+                    </button>
+                  </div>
+                  <div class="image__side side--1">
+                    <img src="./img/pexels-life-of-pix-7974.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide slide--2">
+            <div class="banner banner-2">
+              <div class="container">
+                <div class="banner__content">
+                  <div class="text__content">
+                    <h2 class="main__head">
+                      ELEVATE YOUR <span>MOBILE PHONE</span> <br />
+                      EXPERIENCE, TECHNOLOGY AND STYLE <br />
+                      <span>UP TO 50% OFF</span>
+                    </h2>
+                    <p class="head__text">
+                      Where Innovation Meets Connectivity
+                    </p>
+                    <button class="banner">
+                      <a class="btn btn--primary .btn-white log1" href="#"
+                        >Buy Now</a
+                      >
+                    </button>
+                  </div>
+                  <div class="image__side">
+                    <img src="./img/1702107111846.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide slide--3">
+            <div class="banner banner-3">
+              <div class="container">
+                <div class="banner__content">
+                  <div class="text__content">
+                    <h2 class="main__head">
+                      CAPTURE EVERY MOMENT IN BRILLIANCE WITH A REDEFINING
+                      <span class="span-3">PHOTOGRAPHY EXCELLENCE</span>
+                      <br />
+                      <span class="span-3">UP TO 50% OFF</span>
+                    </h2>
+                    <p class="head__text">
+                      Explore the World through Lens, Where Precision Meets
+                      Passion
+                    </p>
+                    <button class="banner">
+                      <a class="btn btn--primary .btn-white btn-3" href="#"
+                        >Buy Now</a
+                      >
+                    </button>
+                  </div>
+                  <div class="image__side">
+                    <img src="./img/person-camera.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </main>
     </header>
+
+    <script src="./script.js"></script>
   </body>
 </html>

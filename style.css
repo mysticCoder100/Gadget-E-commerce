@@ -18,6 +18,11 @@
   --radius-2: 0.8rem;
   --radius-3: 0.5rem;
 
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
   --color-white: #fff;
   --color-text-dark: #333;
   --color-black: #000;
@@ -26,7 +31,11 @@
   --color-primary-light: #6863f7;
   --color-nav-bg: #eeeeee;
 
+  --color-secondary-light: #eba293;
+  --color-secondary-dark: #d94c2f;
+
   --color-accent-red: #ee2525;
+  --color-accent-red-light: #e73d3d;
 
   --color-header-bg-1: #d7f3f3;
   --color-header-bg-2: #fff;
@@ -53,28 +62,9 @@ img {
   object-fit: cover;
 }
 
-/* a {
-  color: var(--color-white);
-} */
-
 p,
 a {
   font-size: 1.5rem;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  line-height: 1;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-h3 {
-  font-size: 2rem;
 }
 
 .btn,
@@ -109,7 +99,7 @@ h3 {
 }
 
 button a {
-  color: #fff;
+  /* color: #fff; */
   font-family: inherit;
 }
 /* ****************************************************************************************** */
@@ -122,6 +112,11 @@ button a {
   background: var(--color-nav-bg);
 }
 
+.logo {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
 .top__nav {
   display: flex;
   align-items: center;
@@ -131,27 +126,58 @@ button a {
 form {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex: 0 0 40%;
+  margin-left: 15%;
 }
 form input {
-  width: 60rem;
-  padding-block: 0.9rem;
-  padding-inline: 1rem;
   font-family: inherit;
+  font-size: 1.5rem;
+  border: none;
+  background-color: var(--color-white);
+  color: inherit;
+  padding: 0.7rem 2rem;
+  border-radius: 10rem;
+  width: 90%;
+  transition: all 0.2s;
+  margin-right: -3.2rem;
 }
 
-form i {
-  background: var(--color-primary);
-  padding-block: 0.9rem;
-  padding-inline: 1rem;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--color-white);
+form input::placeholder {
+  font-size: 1.2rem;
+}
+
+form input:focus {
+  outline: none;
+  width: 100%;
+  background-color: var(--color-grey-light-1);
+}
+
+form button {
+  border: none;
+  background-color: var(--color-white);
+}
+form button:focus {
+  outline: none;
+}
+form button:active {
+  transform: translateY(2px);
+}
+
+form .search__icon {
+  height: 1.8rem;
+  width: 1.8rem;
+  color: var(--color-grey-light-4);
 }
 
 .logs {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+}
+
+.log1 {
+  color: #fff;
 }
 
 .hearts {
@@ -169,9 +195,241 @@ form i {
   gap: 2rem;
 }
 
+button .love__icon {
+  height: 2.25rem;
+  width: 2.25rem;
+}
+button.cart__button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+.item__count span.cart__number {
+  display: inline-block;
+  font-size: 1rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 50%;
+  background-color: var(--color-accent-red);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -9px;
+  right: 2px;
+}
+button .cart__icon {
+  height: 2.25rem;
+  width: 2.25rem;
+  fill: var(--color-text-dark);
+}
+div.line {
+  display: inline-block;
+  height: 1rem;
+  width: 100%;
+  border-top: 2px solid var(--color-grey-light-4);
+}
+
 .bottom__nav ul {
   display: flex;
   gap: 1.8rem;
-  margin-left: 22.5rem;
+  justify-content: center;
   font-weight: 600;
+  width: fit-content;
+}
+.bottom__nav {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.bottom__nav a:link,
+.bottom__nav a:visited {
+  display: inline-block;
+  color: var(--color-primary);
+  transition: all 0.2s;
+}
+.bottom__nav a:hover,
+.bottom__nav a:active {
+  color: var(--color-accent-red);
+  transform: translateY(-2px);
+}
+.bottom__nav ul {
+  display: flex;
+  gap: 1.8rem;
+  justify-content: center;
+  font-weight: 600;
+  width: fit-content;
+}
+
+ul li a .nav__items {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+/* Banner ********************************************* */
+/********************************************** */
+
+.banner {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-secondary-light),
+    var(--color-secondary-dark)
+  );
+  width: 100%;
+}
+
+.banner-2 {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-accent-red),
+    var(--color-accent-red-light)
+  );
+  width: 100%;
+}
+.banner-3 {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary),
+    var(--color-primary-light)
+  );
+}
+
+.banner__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding-block: 8rem;
+}
+
+h2.main__head {
+  line-height: 4rem;
+  font-size: 3rem;
+  width: 100%;
+}
+h2.main__head span {
+  color: var(--color-primary);
+}
+h2.main__head span.span-3 {
+  color: var(--color-white);
+}
+
+p.head__text {
+  font-weight: 500;
+  color: var(--color-black);
+  /* color: var(--color-accent-red); */
+}
+
+button.banner {
+  margin-top: 2rem;
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+}
+.btn-3 {
+  background: var(--color-accent-red);
+  color: var(--color-white);
+}
+.btn-3:hover {
+  background: var(--color-grey-light-4);
+  color: var(--color-accent-red);
+}
+
+.image__side {
+  display: flex;
+  justify-content: center;
+}
+.image__side img {
+  width: 80%;
+  border-radius: 1rem;
+}
+
+/* SLIDER */
+.slider {
+  /* max-width: 100rem; */
+  height: 50rem;
+  margin: 0 auto;
+  position: relative;
+
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+
+.slider__btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dots__dot {
+  border: none;
+  background-color: red;
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  /* Only necessary when overlying images */
+  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+
+.dots__dot:last-child {
+  margin: 0;
+}
+
+.dots__dot--active {
+  /* background-color: #fff; */
+  background-color: #888;
+  opacity: 1;
 }
