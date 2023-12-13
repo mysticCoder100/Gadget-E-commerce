@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="fontsstles.css" />
 
-    <link rel="stylesheet" href="awsome css/all.min.css" />
-    <link rel="stylesheet" href="awsome css/fontawesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -24,14 +21,15 @@
       <nav class="main__nav">
         <div class="top__nav container">
           <div class="logo"><h1>LOGO</h1></div>
-          <form action="#">
-            <input type="text" name="text" id="search" placeholder="Search" />
-            <button class="search__button">
-              <svg class="search__icon">
-                <use xlink:href="./img/sprite.svg#icon-search"></use>
-              </svg>
-            </button>
-          </form>
+          <div class="bottom__nav">
+            <ul>
+              <li><a class="nav__items" href="#">HOME</a></li>
+              <li><a class="nav__items" href="#">ABOUT US</a></li>
+              <li><a class="nav__items" href="#">BLOG</a></li>
+              <li><a class="nav__items" href="#">CONTACT</a></li>
+              <li><a class="nav__items" href="#">PAYMENT & DELIVERY</a></li>
+            </ul>
+          </div>
 
           <div class="logs">
             <div class="hearts">
@@ -60,107 +58,503 @@
           </div>
         </div>
         <div class="line"></div>
-        <div class="bottom__nav container">
-          <ul>
-            <li><a class="nav__items" href="#">HOME</a></li>
-            <li><a class="nav__items" href="#">ABOUT US</a></li>
-            <li><a class="nav__items" href="#">BLOG</a></li>
-            <li><a class="nav__items" href="#">CONTACT</a></li>
-            <li><a class="nav__items" href="#">PAYMENT & DELIVERY</a></li>
-          </ul>
-        </div>
       </nav>
-      <main>
-        <div class="slider">
-          <div class="slide slide--1">
-            <div class="banner">
-              <div class="container">
-                <div class="banner__content">
-                  <div class="text__content">
-                    <h2 class="main__head">
-                      UNLEACH THE EXTRAORDINARY <br />
-                      WITH OUR CUTTING-EDGE <span>GADGET</span> <br />
-                      <span>UP TO 50% OFF</span>
-                    </h2>
-                    <p class="head__text">
-                      Effortless Innovation in the palm of your hands
-                    </p>
-                    <button class="banner">
-                      <a class="btn btn--primary .btn-white log1" href="#"
-                        >Buy Now</a
-                      >
-                    </button>
-                  </div>
-                  <div class="image__side side--1">
-                    <img src="./img/pexels-life-of-pix-7974.jpg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide slide--2">
-            <div class="banner banner-2">
-              <div class="container">
-                <div class="banner__content">
-                  <div class="text__content">
-                    <h2 class="main__head">
-                      ELEVATE YOUR <span>MOBILE PHONE</span> <br />
-                      EXPERIENCE, TECHNOLOGY AND STYLE <br />
-                      <span>UP TO 50% OFF</span>
-                    </h2>
-                    <p class="head__text">
-                      Where Innovation Meets Connectivity
-                    </p>
-                    <button class="banner">
-                      <a class="btn btn--primary .btn-white log1" href="#"
-                        >Buy Now</a
-                      >
-                    </button>
-                  </div>
-                  <div class="image__side">
-                    <img src="./img/1702107111846.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide slide--3">
-            <div class="banner banner-3">
-              <div class="container">
-                <div class="banner__content">
-                  <div class="text__content">
-                    <h2 class="main__head">
-                      CAPTURE EVERY MOMENT IN BRILLIANCE WITH A REDEFINING
-                      <span class="span-3">PHOTOGRAPHY EXCELLENCE</span>
-                      <br />
-                      <span class="span-3">UP TO 50% OFF</span>
-                    </h2>
-                    <p class="head__text">
-                      Explore the World through Lens, Where Precision Meets
-                      Passion
-                    </p>
-                    <button class="banner">
-                      <a class="btn btn--primary .btn-white btn-3" href="#"
-                        >Buy Now</a
-                      >
-                    </button>
-                  </div>
-                  <div class="image__side">
-                    <img src="./img/person-camera.jpg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <button class="slider__btn slider__btn--left">&larr;</button>
-          <button class="slider__btn slider__btn--right">&rarr;</button>
-          <div class="dots"></div>
-        </div>
-      </main>
     </header>
+    <main>
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="banner">
+            <div class="container">
+              <div class="banner__content">
+                <div class="text__content">
+                  <h2 class="main__head">
+                    UNLEACH THE EXTRAORDINARY <br />
+                    WITH OUR CUTTING-EDGE <span>GADGET</span> <br />
+                    <span>UP TO 50% OFF</span>
+                  </h2>
+                  <p class="head__text">
+                    Effortless Innovation in the palm of your hands
+                  </p>
+                  <button class="banner">
+                    <a class="btn btn--primary .btn-white log1" href="#"
+                      >Buy Now</a
+                    >
+                  </button>
+                </div>
+                <div class="image__side side--1">
+                  <img src="./img/pexels-life-of-pix-7974.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="banner banner-2">
+            <div class="container">
+              <div class="banner__content">
+                <div class="text__content">
+                  <h2 class="main__head">
+                    ELEVATE YOUR <span>MOBILE PHONE</span> <br />
+                    EXPERIENCE, TECHNOLOGY AND STYLE <br />
+                    <span>UP TO 50% OFF</span>
+                  </h2>
+                  <p class="head__text">Where Innovation Meets Connectivity</p>
+                  <button class="banner">
+                    <a class="btn btn--primary .btn-white log1" href="#"
+                      >Buy Now</a
+                    >
+                  </button>
+                </div>
+                <div class="image__side">
+                  <img src="./img/1702107111846.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="banner banner-3">
+            <div class="container">
+              <div class="banner__content">
+                <div class="text__content">
+                  <h2 class="main__head">
+                    CAPTURE EVERY MOMENT IN BRILLIANCE WITH A REDEFINING
+                    <span class="span-3">PHOTOGRAPHY EXCELLENCE</span>
+                    <br />
+                    <span class="span-3">UP TO 50% OFF</span>
+                  </h2>
+                  <p class="head__text">
+                    Explore the World through Lens, Where Precision Meets
+                    Passion
+                  </p>
+                  <button class="banner">
+                    <a class="btn btn--primary .btn-white btn-3" href="#"
+                      >Buy Now</a
+                    >
+                  </button>
+                </div>
+                <div class="image__side">
+                  <img src="./img/person-camera.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+
+      <div class="aside__bar">
+        <h1>Category</h1>
+        <div class="aside__bar--main container">
+          <ul class="side__nav">
+            <!-- <li class="side__nav__item">
+            <a href="#" data-id="all" class="side__nav__link">All</a>
+          </li>
+          <li class="side__nav__item">
+            <a href="#" data-id="laptop" class="side__nav__link">Laptop</a>
+          </li>
+          <li class="side__nav__item">
+            <a href="#" data-id="phone" class="side__nav__link">Phone</a>
+          </li>
+          <li class="side__nav__item">
+            <a href="#" data-id="camera" class="side__nav__link">Camera</a>
+          </li>
+          <li class="side__nav__item">
+            <a href="#" data-id="headset" class="side__nav__link">Headset</a>
+          </li>
+          <li class="side__nav__item">
+            <a href="#" data-id="watch" class="side__nav__link">Smartwatch</a>
+          </li>
+          <li class="side__nav__item">
+            <a href="#" class="side__nav__link">Power bank</a>
+          </li> -->
+          </ul>
+          <div class="container">
+            <form class="form__1" action="#">
+              <input
+                class="input__field"
+                type="text"
+                name="text"
+                id="search"
+                placeholder="What are you looking for"
+              />
+              <button class="search__button">
+                <svg class="search__icon">
+                  <use xlink:href="./img/sprite.svg#icon-search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <section class="main__content">
+        <div class="content__view">
+          <!-- <div class="gadget__container">
+            <div class="gadget__icon">
+              <button class="love__button">
+                <svg class="love__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-bookmark"></use>
+                </svg>
+              </button>
+              <button class="love__button">
+                <svg class="love__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <img src="img/laptop-9.png" alt="" />
+            <div class="details">
+              <div class="detail__left">
+                <h2 class="product__name">
+                  Laptop Intermediate Size Basketball
+                </h2>
+                <div class="product-quantity-container">
+                  <div>
+                    <div class="amounts">
+                      <h2>$1500</h2>
+                    </div>
+                  </div>
+                  <select>
+                    <option selected value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="add__buttons">
+              <div class="stars">
+                <button class="star__button">
+                  <svg class="star__icon--main">
+                    <use xlink:href="./img/symbol-defs.svg#icon-star"></use>
+                  </svg>
+                </button>
+                <div>
+                  <h2>4.5</h2>
+                </div>
+              </div>
+              <div>
+                <button class="cart__button--main">
+                  <a href="#"
+                    ><svg class="cart__icon--main">
+                      <use xlink:href="./img/sprite.svg#icon-cart"></use></svg
+                  ></a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="gadget__container">
+            <div class="gadget__icon">
+              <button class="love__button">
+                <svg class="love__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-bookmark"></use>
+                </svg>
+              </button>
+              <button class="love__button">
+                <svg class="love__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <img src="img/laptop-2.png" alt="" />
+            <div class="details">
+              <div class="detail__left">
+                <h2 class="product__name">
+                  Laptop Intermediate Size Basketball
+                </h2>
+                <div class="product-quantity-container">
+                  <div>
+                    <div class="amounts">
+                      <h2>$1500</h2>
+                    </div>
+                  </div>
+                  <select>
+                    <option selected value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="add__buttons">
+              <div class="stars">
+                <button class="star__button">
+                  <svg class="star__icon--main">
+                    <use xlink:href="./img/symbol-defs.svg#icon-star"></use>
+                  </svg>
+                </button>
+                <div>
+                  <h2>5</h2>
+                </div>
+              </div>
+              <div>
+                <button class="cart__button--main">
+                  <a href="#"
+                    ><svg class="cart__icon--main">
+                      <use xlink:href="./img/sprite.svg#icon-cart"></use></svg
+                  ></a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="gadget__container">
+            <div class="gadget__icon">
+              <button class="love__button">
+                <svg class="love__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-bookmark"></use>
+                </svg>
+              </button>
+              <button class="love__button">
+                <svg class="love__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <img src="img/laptop-14.jpg" alt="" />
+            <div class="details">
+              <div class="detail__left">
+                <h2 class="product__name">
+                  Laptop Intermediate Size Basketball
+                </h2>
+                <div class="product-quantity-container">
+                  <div>
+                    <div class="amounts">
+                      <h2>$1500</h2>
+                    </div>
+                  </div>
+                  <select>
+                    <option selected value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="add__buttons">
+              <div class="stars">
+                <button class="star__button">
+                  <svg class="star__icon--main">
+                    <use xlink:href="./img/symbol-defs.svg#icon-star"></use>
+                  </svg>
+                </button>
+                <div>
+                  <h2>4.5</h2>
+                </div>
+              </div>
+              <div>
+                <button class="cart__button--main">
+                  <a href="#"
+                    ><svg class="cart__icon--main">
+                      <use xlink:href="./img/sprite.svg#icon-cart"></use></svg
+                  ></a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="gadget__container">
+            <div class="gadget__icon">
+              <button class="love__button">
+                <svg class="love__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-bookmark"></use>
+                </svg>
+              </button>
+              <button class="love__button">
+                <svg class="love__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <img src="img/laptop-5.png" alt="" />
+            <div class="details">
+              <div class="detail__left">
+                <h2 class="product__name">
+                  Laptop Intermediate Size Basketball
+                </h2>
+                <div class="product-quantity-container">
+                  <div>
+                    <div class="amounts">
+                      <h2>$1500</h2>
+                    </div>
+                  </div>
+                  <select>
+                    <option selected value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="add__buttons">
+              <div class="stars">
+                <button class="star__button">
+                  <svg class="star__icon--main">
+                    <use xlink:href="./img/symbol-defs.svg#icon-star"></use>
+                  </svg>
+                </button>
+                <div>
+                  <h2>4</h2>
+                </div>
+              </div>
+              <div>
+                <button class="cart__button--main">
+                  <a href="#"
+                    ><svg class="cart__icon--main">
+                      <use xlink:href="./img/sprite.svg#icon-cart"></use></svg
+                  ></a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="gadget__container">
+            <div class="gadget__icon">
+              <button class="love__button">
+                <svg class="love__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-bookmark"></use>
+                </svg>
+              </button>
+              <button class="love__button">
+                <svg class="love__icon">
+                  <use xlink:href="./img/symbol-defs.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <img src="img/cam-15.png" alt="" />
+            <div class="details">
+              <div class="detail__left">
+                <h2 class="product__name">
+                  Laptop Intermediate Size Basketball
+                </h2>
+                <div class="product-quantity-container">
+                  <div>
+                    <div class="amounts">
+                      <h2>$1500</h2>
+                    </div>
+                  </div>
+                  <select>
+                    <option selected value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="add__buttons">
+              <div class="stars">
+                <button class="star__button">
+                  <svg class="star__icon--main">
+                    <use xlink:href="./img/symbol-defs.svg#icon-star"></use>
+                  </svg>
+                </button>
+                <div>
+                  <h2>5</h2>
+                </div>
+              </div>
+              <div>
+                <button class="cart__button--main">
+                  <a href="#"
+                    ><svg class="cart__icon--main">
+                      <use xlink:href="./img/sprite.svg#icon-cart"></use></svg
+                  ></a>
+                </button>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="side__bar">
+          <h1>Best Seller</h1>
+          <div class="best__seller--content">
+            <div class="content">
+              <img src="./img/laptop-10.webp" alt="camera" />
+
+              <div class="titles">
+                <div class="name"><h2>Third Generation Cams</h2></div>
+                <div class="slash__price">
+                  <div class="slash">$500</div>
+                  <div class="price"><strong>$400</strong></div>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <img src="./img/phone-10.webp" alt="camera" />
+
+              <div class="titles">
+                <div class="name"><h2>Third Generation Cams</h2></div>
+                <div class="slash__price">
+                  <div class="slash">$500</div>
+                  <div class="price"><strong>$400</strong></div>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <img src="./img/headset-1.jpg" alt="camera" />
+
+              <div class="titles">
+                <div class="name"><h2>Third Generation Cams</h2></div>
+                <div class="slash__price">
+                  <div class="slash">$500</div>
+                  <div class="price"><strong>$400</strong></div>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <img src="./img/cam-3.png" alt="camera" />
+
+              <div class="titles">
+                <div class="name"><h2>Third Generation Cams</h2></div>
+                <div class="slash__price">
+                  <div class="slash">$500</div>
+                  <div class="price"><strong>$400</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="./script.js"></script>
   </body>
