@@ -702,8 +702,8 @@ strong {
   /* justify-content: space-between; */
 }
 .slash {
-  color: var(--color-accent-red);
+  /* color: var(--color-accent-red); */
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: line-through;
 }

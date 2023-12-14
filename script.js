@@ -61,7 +61,7 @@ const gadgetData = [
     id: 8,
     title: "HP 15s-fq5192TU Core i5 12th Gen 15.6 HD Laptop",
     category: "laptop",
-    img: "./img/laptop-2.png",
+    img: "./img/laptop-2.webp",
     star: 5,
     price: 1900,
   },
@@ -171,14 +171,7 @@ const gadgetData = [
     star: 5,
     price: 100,
   },
-  {
-    id: 22,
-    title: "white cordless headset",
-    category: "laptop",
-    img: "./img/laptop-6.jpg",
-    star: 5,
-    price: 2400,
-  },
+
   {
     id: 23,
     title:
@@ -234,7 +227,7 @@ const gadgetData = [
     id: 29,
     title: "headphones-glowing-blue wireless",
     category: "headset",
-    img: "./img/headset-8.png",
+    img: "./img/headset-8.webp",
     star: 4.5,
     price: 400,
   },
@@ -329,14 +322,7 @@ const gadgetData = [
     star: 5,
     price: 4500,
   },
-  {
-    id: 41,
-    title: "Walton Tamarind EX5800A 14 Inch Core I5 8th Gen Laptop Price in BD",
-    category: "laptop",
-    img: "./img/laptop-11.webp",
-    star: 4.5,
-    price: 250,
-  },
+
   {
     id: 42,
     title:
@@ -354,14 +340,7 @@ const gadgetData = [
     star: 5,
     price: 100,
   },
-  {
-    id: 44,
-    title: "Walton Tamarind EX5800A 14 Inch Core I5 8th Gen Laptop Price in BD",
-    category: "laptop",
-    img: "./img/laptop-12.webp",
-    star: 4.5,
-    price: 300,
-  },
+
   {
     id: 45,
     title: "Samsung Galaxy A04s 4GB RAM 128GB ROM",
@@ -393,7 +372,7 @@ const gadgetData = [
     id: 48,
     title: "Samsung Mobile Phone Png Hd HQ PNG",
     category: "phone",
-    img: "./img/phone-14.png",
+    img: "./img/phone-14.webp",
     star: 5,
     price: 250,
   },
